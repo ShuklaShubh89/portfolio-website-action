@@ -34,6 +34,7 @@ ${AWS_REGION}
 text
 EOF
 
+rm package-lock.json
 npm install
 npm run build
 

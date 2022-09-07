@@ -14,7 +14,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip -q awscliv2.zip
 RUN ./aws/install
 
-RUN useradd -ms /bin/bash nonroot 
+RUN useradd -ms /bin/bash nonroot
 RUN usermod -aG sudo nonroot
 
 ADD entrypoint.sh /entrypoint.sh
