@@ -18,7 +18,7 @@ RUN useradd -ms /bin/bash nonroot
 RUN usermod -aG sudo nonroot
 
 ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.
+RUN chmod +x /entrypoint.sh
 
 USER nonroot
 
